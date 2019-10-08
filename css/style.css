@@ -1,0 +1,58 @@
+@charset 'utf-8';
+
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
+
+* {
+    font-family: 'Microsoft JhengHei';
+}
+
+h3
+ {
+    font-family: 'Microsoft JhengHei';
+}
+
+img {
+    width: 100%;
+
+    vertical-align: top;
+}
+
+/* --- WRAPPER --- */
+#wrap {
+    width: 100%;
+    max-width: 760px;
+    margin: auto;
+}
+
+.cart {
+    position: relative;
+}
+
+.btn_1,
+.btn_2,
+.btn_3 {
+    position: absolute;
+    bottom: 4%;
+    left: 10%;
+    /*left: 50%;*/
+    width: 80%;
+    transition: all .35s;
+    /*transform: translateX(-50%);*/
+    animation: stretch .5s ease-out alternate infinite none running;
+}
+
+.btn_1:hover,
+.btn_2:hover,
+.btn_3:hover {
+    filter: saturate(150%) opacity(80%);
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
